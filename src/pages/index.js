@@ -16,11 +16,8 @@ export default function Home() {
         <title>Dhyan | Portfolio</title>
         <meta name="description" content="Dhyan Portfolio" />
         <link rel="icon" href="/images/favicon/favicon.ico" />
-   <link rel="icon" href="/images/favicon/favicon.ico" sizes="32x32" />
-  <link rel="icon" href="/images/favicon/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="/images/favicon/site.webmanifest" />
-  
+   
+
       </Head>
       <TransitionEffect />
    <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
