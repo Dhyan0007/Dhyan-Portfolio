@@ -60,7 +60,7 @@ const Skills = () => {
         <Skill name="Power BI" x="10vw" y="-18vw" />
 
         {/* ========== Frameworks ========== */}
-        <Skill name=".NET" x="15vw" y="-12vw" />
+        <Skill name=".NET" x="15vw" y="-10vw" />
 
         {/* ========== Design Tools ========== */}
         <Skill name="Figma" x="0vw" y="-20vw" />
