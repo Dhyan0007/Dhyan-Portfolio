@@ -85,7 +85,7 @@ const Experience = () => {
     },
     {
       role: "Bussiness Development Intern",
-      company: "Intellipaat",
+      company: "Intellipaat Software Solutions Pvt. Ltd.",
       duration: "Sep 2023 - Nov 2023",
       description: "where I contributed to lead generation, client engagement, and supporting sales strategies to drive business growth.",
       skills: ["CRM tools", "Client Engagement", "Sales & Negotiation", "Market Research", "Presentation & Pitching"]
