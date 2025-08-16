@@ -69,8 +69,8 @@ const about = () => {
     analytics tools like Power BI and Tableau, enabling me to turn complex datasets into actionable insights.</p>
 
 
-<p className="my-4 font-medium"> Beyond tech, I’m deeply involved in community service and leadership. From orchestrating events to volunteering with Youth for Seva, I’ve found immense value in giving back and making a difference. In my free time, 
-    you’ll find me trekking, exploring new cultures, or indulging in strategy-based video games—activities that fuel my creativity and resilience.</p>    
+<p className="my-4 font-medium"> Beyond tech, I’m deeply involved in community service and leadership. From orchestrating events to volunteering with Youth for Seva, I’ve found immense value in 
+    giving back and making a difference. In my free time, you’ll find me trekking, exploring new cultures, or indulging in strategy-based video games—activities that fuel my creativity and resilience.</p>    
 
 
 
