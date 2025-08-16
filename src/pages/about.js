@@ -1,7 +1,7 @@
+import { useState, useEffect, useRef } from 'react';
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/dhyanAbout.png";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
@@ -33,7 +33,46 @@ const AnimatedNumbers = ({ value }) => {
     return <span ref={ref}></span>;
 };
 
-const about = () => {
+const ScrollToTopButton = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    return (
+        <button
+            className={`fixed bottom-8 right-8 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark dark:from-primaryDark dark:to-primary flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out shadow-lg z-50 ${
+                isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+            } hover:scale-110 hover:shadow-xl active:scale-95 group`}
+            onClick={scrollToTop}
+            aria-label="Scroll to top"
+        >
+            <div className="relative">
+                <div className="w-0 h-0 border-l-[12px] border-r-[12px] border-b-[18px] border-l-transparent border-r-transparent border-b-light dark:border-b-dark transform -translate-y-0.5 transition-all duration-300 group-hover:-translate-y-1"></div>
+                <div className="absolute inset-0 rounded-full bg-primary opacity-0 group-hover:opacity-20 dark:group-hover:opacity-30 blur-[2px] transition-opacity duration-300"></div>
+            </div>
+        </button>
+    );
+};
+
+const About = () => {
     return (
         <>
             <Head>
@@ -46,14 +85,13 @@ const about = () => {
                 <link rel="manifest" href="/images/favicon/site.webmanifest" />
             </Head>
             <TransitionEffect />
-            <main className="flex w-full flex-col items-center justify-center dark:text-light">
+            <main className="flex w-full flex-col items-center justify-center dark:text-light relative">
                 <Layout className="pt-16">
                     <AnimatedText
                         text="Passion Fuels Purpose!"
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-                        {/* Biography Section */}
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                                 Biography
@@ -95,7 +133,6 @@ const about = () => {
                             </div>
                         </div>
 
-                        {/* Profile Image */}
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                             <Image
@@ -107,7 +144,6 @@ const about = () => {
                             />
                         </div>
 
-                        {/* Years of Education */}
                         <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
                             <div className="flex flex-col items-end justify-center xl:items-center">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
@@ -126,9 +162,10 @@ const about = () => {
                         <Certifications />
                     </div>
                 </Layout>
+                <ScrollToTopButton />
             </main>
         </>
     );
 };
 
-export default about;
+export default About;
