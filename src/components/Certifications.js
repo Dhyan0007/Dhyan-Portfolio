@@ -8,6 +8,13 @@ const Certifications = () => {
 
   const certifications = [
     {
+      name: "LLMOps – Productionalizing Real-World Applications with LLMs and Agents",
+      issuer: "Analytics Vidhya [DHS 2025]",
+      year: "",
+      color: "from-red-400 to-orange-600",
+      image: "/images/certificates/DHS.jpeg"
+    },
+    {
       name: "Full Stack Development - Java",
       issuer: "Atas",
       year: "",
