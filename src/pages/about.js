@@ -98,38 +98,23 @@ const About = () => {
                             </h2>
                             <div className="text-justify space-y-4">
                                 <p className="font-medium">
-                                    Hello, I'm Dhyan A, a passionate and driven tech professional currently pursuing my
-                                    Master's in Computer Applications at Seshadripuram College, Tumakuru. My academic and
-                                    professional experiences have shaped me into someone who thrives at the intersection
-                                    of technology, creativity, and problem-solving.
+                                    Hello, I’m Dhyan A, a passionate and driven tech professional who has recently completed a Master's in Computer Applications at Seshadripuram College, Tumakuru. My journey is defined by a deep interest in creating innovative, user-centric technologies that blend creativity with practical problem-solving.
                                 </p>
 
                                 <p className="font-medium">
-                                    Over the years, I've worked on exciting projects like designing IoT-based fire
-                                    alerting systems and streamlining dairy operations with database management. These
-                                    experiences taught me not only technical skills but also the importance of
-                                    understanding real-world challenges.
+                                    I have hands-on experience developing a diverse range of projects, from an AI-powered assistant with NLP and voice recognition to an IoT-based fire alerting system. These endeavors have sharpened my technical skills in programming languages like C++, Python, and Java, as well as web technologies such as HTML, CSS, and PHP. I also enjoy transforming complex data into clear insights using tools like Power BI and Tableau.
                                 </p>
 
                                 <p className="font-medium">
-                                    I've honed my expertise in programming languages like C++, Python, and Java, along
-                                    with web technologies such as HTML, CSS, and PHP. I also have a knack for data
-                                    analytics tools like Power BI and Tableau, enabling me to turn complex datasets into
-                                    actionable insights.
+                                    Beyond my technical pursuits, I have a strong record of leadership and community engagement. I have orchestrated academic events, spearheaded community service initiatives with Youth for Seva, and been part of the core team for Bangalore’s major marathon events. These experiences have honed my abilities in team collaboration, effective communication, and project management.
+
                                 </p>
 
                                 <p className="font-medium">
-                                    Beyond tech, I'm deeply involved in community service and leadership. From
-                                    orchestrating events to volunteering with Youth for Seva, I've found immense value in
-                                    giving back and making a difference. In my free time, you'll find me trekking,
-                                    exploring new cultures, or indulging in strategy-based video games—activities that
-                                    fuel my creativity and resilience.
+                                    In my free time, I fuel my creativity and strategic thinking through trekking, exploring new cultures, and playing strategy-based video games. I am now eager to apply my comprehensive skill set to contribute to impactful projects and drive organizational success. Let's connect and innovate together!
+
                                 </p>
 
-                                <p className="font-medium">
-                                    I'm excited to connect, collaborate, and create solutions that inspire change. Let's
-                                    innovate together!
-                                </p>
                             </div>
                         </div>
 
