@@ -73,7 +73,7 @@ const Education = () => {
                         time="2025"                  
                         place="Seshadripuram College, Tumakuru"
                         info="Specialized in Advanced Web Development, AI/ML, and Data Structures. Active participant in research projects and tech symposiums."
-                        grade="7.5 CGPA"
+                        grade="7.8 CGPA"
                     />
                     <EducationItem 
                         type="Bachelor of Computer Applications"
@@ -99,5 +99,6 @@ const Education = () => {
         </section>
     );
 };
+
 
 export default Education;
